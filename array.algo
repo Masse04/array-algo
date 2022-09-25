@@ -22,6 +22,9 @@ BEGIN
     END_FOR
     RETURN som
 END
+
+
+
 ALGORITHM Array egalité
 VAR
     Arr1 : ARRAY_OF INTEGER[];
