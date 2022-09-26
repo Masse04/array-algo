@@ -34,15 +34,8 @@ BEGIN
     FOR i FROM 0 TO Arr1.lenght-1 STEP 1  DO
         FOR j FROM 0 TO Arr2.lenght-1 STEP 1  DO
         IF (Arr1[i] = Arr2[j]) THEN
-            som := som + Arr1[i] ;
+            som := som + Arr1[i] + Arr2[j];
         END_IF
-        END_FOR
-    END_FOR
-    FOR i FROM 0 TO Arr2.lenght-1 STEP 1  DO
-        FOR j FROM 0 TO Arr1.lenght-1 STEP 1  DO
-            IF (Arr2[i] = Arr1[j]) THEN
-                som := som + Arr2[i] ;
-            END_IF
         END_FOR
     END_FOR
     RETURN som
